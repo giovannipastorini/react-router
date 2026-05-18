@@ -1,8 +1,13 @@
+import AppHeader from "../components/AppHeader"
+
 export default function ProductsPage (){
 
     return(
-        <div className="container">
-            <h1>Prodotti</h1>
-        </div>
+        <>
+            <AppHeader />
+            <div className="container">
+                <h1>Prodotti</h1>
+            </div>
+        </>
     )
 }

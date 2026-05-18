@@ -1,8 +1,13 @@
+import AppHeader from "../components/AppHeader"
+
 export default function AboutUsPage (){
 
     return(
-        <div className="container">
-            <h1>Chi siamo</h1>
-        </div>
+        <>
+            <AppHeader />
+            <div className="container">
+                <h1>Chi siamo</h1>
+            </div>
+        </>
     )
 }
