@@ -1,11 +1,19 @@
-import AppHeader from "./components/AppHeader"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import DefaultLayout from "./layouts/DefaultLayout"
+
 
 function App() {
   
   
 
   return (
-    <AppHeader />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
          
   )
 }
