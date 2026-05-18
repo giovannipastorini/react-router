@@ -25,24 +25,29 @@ export default function ProductsPage (){
     return(
         <>
             
+            <h1>Prodotti</h1>
             <div className="container">
-                <h1>Prodotti</h1>
-                <div className="products-list">
-                    <div className="row">
-                    </div>
+                
+                    <div className="row g-3">
+                    
                     
                         {
                             products.map(product =>(
                                 <div className="col-4" key={product.id}>
                                     <div className="card">
-                                        <p>{product.title}</p>
+                                        <img id="card-image" src={product.image} alt="" />
+                                        <div className="card-body">
+                                            <ul className="list-unstyled">
+                                                <li><strong>{product.title}</strong></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 
                             ))
                         }
-                    
-                </div>
+                    </div>
+                
             </div>
         </>
     )
