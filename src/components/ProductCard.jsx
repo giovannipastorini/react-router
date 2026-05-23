@@ -6,7 +6,7 @@ export default function ProductCard({product, children}){
                 <div className="card-body">
                   <h5 className="card-title">{product.title}</h5>
                   <p className="card-text">{product.category}</p>
-                  <p className="card-text text-lg">{product.price}</p>
+                  <p className="card-text"><span>prezzo: </span>{product.price}</p>
                   {/* <Link to={`/characters/${product.id}`}>View More</Link> */}
                   {children}
                 </div>
