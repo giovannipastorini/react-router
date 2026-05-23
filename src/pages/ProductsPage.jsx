@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import ProductsList from "../components/ProductsList"
 
 export default function ProductsPage (){
 
@@ -26,11 +27,8 @@ export default function ProductsPage (){
         <>
             
             <h1>Prodotti</h1>
-            <div className="container">
-                
+           {/*  <div className="container">
                     <div className="row g-3">
-                    
-                    
                         {
                             products.map(product =>(
                                 <div className="col-4" key={product.id}>
@@ -43,12 +41,11 @@ export default function ProductsPage (){
                                         </div>
                                     </div>
                                 </div>
-                                
                             ))
                         }
-                    </div>
-                
-            </div>
+                    </div>    
+            </div> */}
+            <ProductsList products={products} />
         </>
     )
 }
